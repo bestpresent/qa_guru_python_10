@@ -13,4 +13,4 @@ def test_github():
 
     s("#issues-tab").click()
 
-    s(by.partial_text("#88")).should(be.visible)
+    s(by.partial_text("#88")).should(be.visible).with_(timeout=20)
